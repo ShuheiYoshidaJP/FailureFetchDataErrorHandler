@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		022A37FC26BD244700003C63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A37FB26BD244700003C63 /* AppDelegate.swift */; };
+		022A37FE26BD244700003C63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A37FD26BD244700003C63 /* SceneDelegate.swift */; };
+		022A380026BD244700003C63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A37FF26BD244700003C63 /* ViewController.swift */; };
+		022A380326BD244700003C63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 022A380126BD244700003C63 /* Main.storyboard */; };
+		022A380526BD244B00003C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 022A380426BD244B00003C63 /* Assets.xcassets */; };
+		022A380826BD244B00003C63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 022A380626BD244B00003C63 /* LaunchScreen.storyboard */; };
+		022A381326BE165100003C63 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A381226BE165100003C63 /* ErrorView.swift */; };
+		022A381526BE165800003C63 /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 022A381426BE165800003C63 /* ErrorView.xib */; };
+		4388C6C4BC5E520EC846DD5D /* Pods_FailureFetchDataErrorHandler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49D873B961921B52E5DBF1B /* Pods_FailureFetchDataErrorHandler.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		022A37F826BD244700003C63 /* FailureFetchDataErrorHandler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FailureFetchDataErrorHandler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		022A37FB26BD244700003C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		022A37FD26BD244700003C63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		022A37FF26BD244700003C63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		022A380226BD244700003C63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		022A380426BD244B00003C63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		022A380726BD244B00003C63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		022A380926BD244B00003C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		022A381226BE165100003C63 /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		022A381426BE165800003C63 /* ErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
+		3FC752BEDEE92743591832C8 /* Pods-FailureFetchDataErrorHandler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FailureFetchDataErrorHandler.release.xcconfig"; path = "Target Support Files/Pods-FailureFetchDataErrorHandler/Pods-FailureFetchDataErrorHandler.release.xcconfig"; sourceTree = "<group>"; };
+		6E2A148F0B381F9A7F816539 /* Pods-FailureFetchDataErrorHandler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FailureFetchDataErrorHandler.debug.xcconfig"; path = "Target Support Files/Pods-FailureFetchDataErrorHandler/Pods-FailureFetchDataErrorHandler.debug.xcconfig"; sourceTree = "<group>"; };
+		C49D873B961921B52E5DBF1B /* Pods_FailureFetchDataErrorHandler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FailureFetchDataErrorHandler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		022A37F526BD244700003C63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4388C6C4BC5E520EC846DD5D /* Pods_FailureFetchDataErrorHandler.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		022A37EF26BD244700003C63 = {
+			isa = PBXGroup;
+			children = (
+				022A37FA26BD244700003C63 /* FailureFetchDataErrorHandler */,
+				022A37F926BD244700003C63 /* Products */,
+				A98D58B0F16E53FE145AB925 /* Pods */,
+				9FB17CE52B89E3F0AF4A7573 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		022A37F926BD244700003C63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				022A37F826BD244700003C63 /* FailureFetchDataErrorHandler.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		022A37FA26BD244700003C63 /* FailureFetchDataErrorHandler */ = {
+			isa = PBXGroup;
+			children = (
+				022A37FB26BD244700003C63 /* AppDelegate.swift */,
+				022A37FD26BD244700003C63 /* SceneDelegate.swift */,
+				022A37FF26BD244700003C63 /* ViewController.swift */,
+				022A380126BD244700003C63 /* Main.storyboard */,
+				022A380426BD244B00003C63 /* Assets.xcassets */,
+				022A381226BE165100003C63 /* ErrorView.swift */,
+				022A381426BE165800003C63 /* ErrorView.xib */,
+				022A380626BD244B00003C63 /* LaunchScreen.storyboard */,
+				022A380926BD244B00003C63 /* Info.plist */,
+			);
+			path = FailureFetchDataErrorHandler;
+			sourceTree = "<group>";
+		};
+		9FB17CE52B89E3F0AF4A7573 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C49D873B961921B52E5DBF1B /* Pods_FailureFetchDataErrorHandler.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A98D58B0F16E53FE145AB925 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E2A148F0B381F9A7F816539 /* Pods-FailureFetchDataErrorHandler.debug.xcconfig */,
+				3FC752BEDEE92743591832C8 /* Pods-FailureFetchDataErrorHandler.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		022A37F726BD244700003C63 /* FailureFetchDataErrorHandler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 022A380C26BD244B00003C63 /* Build configuration list for PBXNativeTarget "FailureFetchDataErrorHandler" */;
+			buildPhases = (
+				BF1D4A374CC0559590CE8C64 /* [CP] Check Pods Manifest.lock */,
+				022A37F426BD244700003C63 /* Sources */,
+				022A37F526BD244700003C63 /* Frameworks */,
+				022A37F626BD244700003C63 /* Resources */,
+				CDEBA4F2C1AD0AA03B72BA17 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FailureFetchDataErrorHandler;
+			productName = FailureFetchDataErrorHandler;
+			productReference = 022A37F826BD244700003C63 /* FailureFetchDataErrorHandler.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		022A37F026BD244700003C63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					022A37F726BD244700003C63 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 022A37F326BD244700003C63 /* Build configuration list for PBXProject "FailureFetchDataErrorHandler" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 022A37EF26BD244700003C63;
+			productRefGroup = 022A37F926BD244700003C63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				022A37F726BD244700003C63 /* FailureFetchDataErrorHandler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		022A37F626BD244700003C63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				022A380826BD244B00003C63 /* LaunchScreen.storyboard in Resources */,
+				022A380526BD244B00003C63 /* Assets.xcassets in Resources */,
+				022A380326BD244700003C63 /* Main.storyboard in Resources */,
+				022A381526BE165800003C63 /* ErrorView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BF1D4A374CC0559590CE8C64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FailureFetchDataErrorHandler-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDEBA4F2C1AD0AA03B72BA17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FailureFetchDataErrorHandler/Pods-FailureFetchDataErrorHandler-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FailureFetchDataErrorHandler/Pods-FailureFetchDataErrorHandler-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FailureFetchDataErrorHandler/Pods-FailureFetchDataErrorHandler-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		022A37F426BD244700003C63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				022A380026BD244700003C63 /* ViewController.swift in Sources */,
+				022A37FC26BD244700003C63 /* AppDelegate.swift in Sources */,
+				022A37FE26BD244700003C63 /* SceneDelegate.swift in Sources */,
+				022A381326BE165100003C63 /* ErrorView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		022A380126BD244700003C63 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				022A380226BD244700003C63 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		022A380626BD244B00003C63 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				022A380726BD244B00003C63 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		022A380A26BD244B00003C63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		022A380B26BD244B00003C63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		022A380D26BD244B00003C63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E2A148F0B381F9A7F816539 /* Pods-FailureFetchDataErrorHandler.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3A74B9LK8K;
+				INFOPLIST_FILE = FailureFetchDataErrorHandler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SheheiYoshida.FailureFetchDataErrorHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		022A380E26BD244B00003C63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FC752BEDEE92743591832C8 /* Pods-FailureFetchDataErrorHandler.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3A74B9LK8K;
+				INFOPLIST_FILE = FailureFetchDataErrorHandler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SheheiYoshida.FailureFetchDataErrorHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		022A37F326BD244700003C63 /* Build configuration list for PBXProject "FailureFetchDataErrorHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				022A380A26BD244B00003C63 /* Debug */,
+				022A380B26BD244B00003C63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		022A380C26BD244B00003C63 /* Build configuration list for PBXNativeTarget "FailureFetchDataErrorHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				022A380D26BD244B00003C63 /* Debug */,
+				022A380E26BD244B00003C63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 022A37F026BD244700003C63 /* Project object */;
+}
