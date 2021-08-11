@@ -27,7 +27,7 @@ class ViewController: UIViewController {
             switch result {
             case .success(let todoData):
                 DispatchQueue.main.async {
-                    self.resultLabel.text = todoData.toString()
+                    self.resultLabel.text = todoData[0].toString()
                 }
             case .failure(let error):
                 DispatchQueue.main.async {
@@ -44,12 +44,15 @@ class ViewController: UIViewController {
 }
 
 class DataManager {
-    func request(handler: @escaping (Result<TodoModel, FetchError>) -> Void) {
-        let url = URL(string: "https://jsonplaceholder.typicode.com/todos/1")!
-        AF.request(url).responseJSON { response in
+    var headers: HTTPHeaders? = nil
+    
+    func request(handler: @escaping (Result<[ArticleModel], FetchError>) -> Void) {
+//        headers = [ "Authorization": "Bearer " + "bc2b80b339254c920e27454eea40f2f83a66b1fd" ]
+        let url = URL(string: "https://qiita.com/api/v2/items?page=1&per_page=1")!
+        AF.request(url, headers: headers).responseJSON { response in
             guard let data = response.data else { return }
             do {
-                let object = try JSONDecoder().decode(TodoModel.self, from: data)
+                let object = try JSONDecoder().decode([ArticleModel].self, from: data)
                 handler(.success(object))
             } catch {
                 if let exceptionData = try? JSONDecoder().decode(ErrorModel.self, from: data) {
@@ -62,7 +65,7 @@ class DataManager {
                     handler(.failure(.case3))
                 }
             }
-            handler(.failure(.case4))
+            
         }
     }
 }
@@ -92,19 +95,77 @@ enum FetchError: Error {
     }
 }
 
-struct TodoModel: Codable {
-    var userId: Int?
-    var id: Int?
+struct ArticleModel: Codable {
+    var renderBody: String?
+    var body: String?
+    var coEditing: Bool?
+    var commentsCount: Int?
+    var createdAt: String?
+    var id: String?
+    var likesCount: Int?
+    var name: String?
+    var isPrivate: Bool?
+    var reactionsCount: Int?
     var title: String?
-    var isChecked: Bool?
+    var updateAt: String?
+    var url: String?
+    var user: UserModel
+    var pageViewsCount: Int?
     enum CodingKeys: String, CodingKey {
-        case userId
-        case id
-        case title
-        case isChecked = "completed"
+        case renderBody = "rendered_body"
+        case body = "body"
+        case coEditing = "coediting"
+        case commentsCount = "comments_count"
+        case createdAt = "created_at"
+        case id = "id"
+        case likesCount = "likes_count"
+        case name = "name"
+        case isPrivate = "private"
+        case reactionsCount = "reaction_count"
+        case title = "title"
+        case updateAt = "update_at"
+        case url = "url"
+        case user = "user"
+        case pageViewsCount = "page_views_count"
     }
     func toString() -> String {
-        return "title: \(String(describing: title))\nid:\(String(describing: id))\nuserId:\(String(describing: userId))"
+        return "id: \(String(describing: id)),\n: \(String(describing: title)),\ncreatedA: \(String(describing: createdAt))"
+    }
+}
+struct UserModel: Codable {
+    var description: String?
+    var facebookId: String?
+    var followeesCount: Int?
+    var followersCount: Int?
+    var id: String?
+    var itemsCount: Int?
+    var location: String?
+    var name: String?
+    var organization: String?
+    var permanentId: Int?
+    var profileImageUrl: String?
+    var teamOnly: Bool?
+    var twitterScreenName: String?
+    var websiteUrl: String?
+    var linkedinId: String?
+    var githubLoginName: String?
+    enum CodingKeys: String, CodingKey {
+        case description = "description"
+        case facebookId = "facebook_id"
+        case followeesCount = "followees_count"
+        case followersCount = "followers_count"
+        case id = "id"
+        case itemsCount = "items_count"
+        case location = "location"
+        case name = "name"
+        case organization = "organization"
+        case permanentId = "permanent_id"
+        case profileImageUrl = "profile_image_url"
+        case teamOnly = "team_only"
+        case twitterScreenName = "twitter_screen_name"
+        case websiteUrl = "website_url"
+        case linkedinId = "linkedin_id"
+        case githubLoginName = "github_login_name"
     }
 }
 
